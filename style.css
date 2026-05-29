@@ -253,16 +253,15 @@ body {
 
   #nav {
     height: auto;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
   }
   #nav a {
     padding: 10px 14px;
     font-size: 13px;
-    border-right: none;
-    border-bottom: 1px solid rgba(255,255,255,.07);
-    width: 100%;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
-  #nav a:first-child { border-left: none; }
 
   #page {
     flex-direction: column;
