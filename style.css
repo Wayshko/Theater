@@ -92,7 +92,6 @@ body {
   border-right: 1px solid #ddd;
 }
 
-/* ── Main content ── */
 #main {
   flex: 1;
   min-width: 0;
@@ -100,7 +99,6 @@ body {
   border-right: 1px solid #ddd;
 }
 
-/* Posts */
 .post { margin-bottom: 0; }
 .post + .post {
   border-top: 1px dotted #ccc;
@@ -292,4 +290,11 @@ body {
   #sidebar .widget:last-child { width: 100%; }
 
   #footer { width: 100%; padding: 10px 14px; }
+}
+
+@media (max-width: 480px) {
+  body { background-attachment: fixed; }
+  #sidebar .widget { width: 100%; }
+  .post-title { font-size: 14px; }
+  .page-title { font-size: 17px; }
 }
