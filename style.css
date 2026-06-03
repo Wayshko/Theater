@@ -86,8 +86,7 @@ body {
 #nav a:first-child { border-left: 1px solid rgba(255,255,255,.06); }
 #nav a:hover,
 #nav a.active {
-  background: #e05010 url('images/navon.gif') repeat-x left top;
-  background-size: auto 100%;
+  background: #e2761a;
   color: #fff;
 }
 
