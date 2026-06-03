@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wayshko.github.io/sitemap.xml

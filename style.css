@@ -51,6 +51,7 @@ body {
   text-shadow: 1px 1px 6px rgba(0,0,0,.85), 0 0 18px rgba(60,40,100,.7);
   letter-spacing: .5px;
   line-height: 1.2;
+  margin: 0;
 }
 .site-tagline {
   font-size: 11px;
@@ -119,7 +120,7 @@ body {
   font-size: 15px;
   font-weight: 700;
   line-height: 1.35;
-  margin-bottom: 2px;
+  margin: 0 0 2px;
 }
 .post-title a { color: #3a1a10; text-decoration: none; }
 .post-title a:hover { color: #7a3010; text-decoration: underline; }
@@ -155,7 +156,7 @@ body {
   font-size: 19px;
   font-weight: 700;
   color: #3a1a10;
-  margin-bottom: 14px;
+  margin: 0 0 14px;
   padding-bottom: 8px;
   border-bottom: 1px solid #ddd;
 }
@@ -283,9 +284,10 @@ body {
 }
 
 /* ════════════════════════════════
-   STACK COLUMNS — PHONE PORTRAIT (≤ 600px)
+   STACK COLUMNS — NARROW PORTRAIT ONLY
+   (landscape always keeps the sidebar on the right)
    ════════════════════════════════ */
-@media (max-width: 600px) {
+@media (max-width: 600px) and (orientation: portrait) {
   #page {
     flex-direction: column;
   }
