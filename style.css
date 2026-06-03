@@ -236,7 +236,7 @@ body {
 .feed-link img { width: 14px; height: 14px; }
 .feed-link:hover { color: #fff; }
 
-@media (max-width: 767px) {
+@media (max-width: 899px) {
   #wrap, #header, #nav, #footer { width: 100%; }
 
   #header {
@@ -290,11 +290,4 @@ body {
   #sidebar .widget:last-child { width: 100%; }
 
   #footer { width: 100%; padding: 10px 14px; }
-}
-
-@media (max-width: 480px) {
-  body { background-attachment: fixed; }
-  #sidebar .widget { width: 100%; }
-  .post-title { font-size: 14px; }
-  .page-title { font-size: 17px; }
 }
