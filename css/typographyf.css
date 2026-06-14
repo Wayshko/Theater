@@ -1,0 +1,107 @@
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 13px;
+  line-height: 1.75;
+  color: #222;
+}
+
+/* ===== ШАПКА ===== */
+
+.site-name {
+  font-family: 'Didot', 'Bodoni MT', Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 6px rgba(0,0,0,.85), 0 0 18px rgba(60,40,100,.7);
+  letter-spacing: .5px;
+  line-height: 1.2;
+}
+
+.site-tagline {
+  font-size: 11px;
+  color: #c8b8e8;
+  font-style: italic;
+  letter-spacing: 1.5px;
+  text-shadow: 0 1px 4px rgba(0,0,0,.8);
+}
+
+/* ===== МЕНЮ ===== */
+
+#nav a {
+  font-size: 12px;
+  color: #bbb;
+  letter-spacing: .3px;
+}
+
+/* ===== ПОСТЫ ===== */
+
+.post-title {
+  font-family: 'Didot', 'Bodoni MT', Georgia, serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.post-meta {
+  font-size: 11px;
+  color: #888;
+  font-style: italic;
+}
+.post-meta b { color: #7a4820; font-style: normal; }
+
+.post-body { color: #333; }
+
+.post-footer {
+  font-size: 11px;
+  color: #888;
+}
+
+/* ===== СТАТИЧЕСКАЯ СТРАНИЦА ===== */
+
+.page-title {
+  font-family: 'Didot', 'Bodoni MT', Georgia, serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: #3a1a10;
+}
+
+.page-body { color: #333; }
+
+.page-body h3 {
+  font-family: 'Didot', 'Bodoni MT', Georgia, serif;
+  font-size: 14px;
+  color: #7a4820;
+}
+
+.page-body blockquote {
+  font-style: italic;
+  color: #222;
+}
+
+.page-body blockquote cite {
+  font-size: 11px;
+  color: #888;
+  font-style: normal;
+}
+
+/* ===== ВИДЖЕТЫ ===== */
+
+.widget-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.widget ul li { font-size: 12px; }
+
+.widget p { font-size: 12px; color: #aaa; }
+
+/* ===== ПОДВАЛ ===== */
+
+#footer {
+  text-align: left;
+  font-size: 11px;
+  color: #aaa;
+}

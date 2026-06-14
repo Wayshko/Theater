@@ -1,0 +1,19 @@
+/* ===== МЕНЮ ===== */
+
+#nav a {
+  text-decoration: none;
+  transition: color .15s;
+}
+
+#nav a:hover,
+#nav a.active {
+  background: #e05010 linear-gradient(180deg, #fcc61e 0%, #e58811 50%, #cc4502 100%);
+  color: #fff;
+}
+
+/* ===== СПИСКИ ВИДЖЕТОВ ===== */
+
+.widget ul { list-style: none; }
+
+.widget ul li a { color: #ccc; text-decoration: none; }
+.widget ul li a:hover { color: #fff; text-decoration: underline; }

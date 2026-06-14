@@ -1,0 +1,244 @@
+/* ===== СБРОС ===== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* ===== ОБЁРТКА ===== */
+
+#wrap {
+  width: 900px;
+  margin: 0 auto;
+}
+
+/* ===== ШАПКА ===== */
+
+#header {
+  width: 900px;
+  height: 160px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.site-branding {
+  position: absolute;
+  top: 14px;
+  left: 18px;
+  z-index: 2;
+}
+
+.site-tagline {
+  margin-top: 2px;
+}
+
+/* ===== МЕНЮ ===== */
+
+#nav {
+  width: 900px;
+  height: 30px;
+  display: flex;
+  align-items: stretch;
+}
+
+#nav a {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  white-space: nowrap;
+}
+
+/* ===== ОСНОВНАЯ ЧАСТЬ ===== */
+
+#page {
+  display: flex;
+}
+
+#main {
+  flex: 1;
+  min-width: 0;
+  padding: 18px 20px 24px;
+}
+
+/* ===== ПОСТЫ ===== */
+
+.post + .post {
+  margin-top: 18px;
+  padding-top: 18px;
+}
+
+.post-title {
+  margin: 0 0 2px;
+}
+
+.post-meta {
+  margin-bottom: 8px;
+}
+
+.post-body p {
+  margin-bottom: 7px;
+}
+
+.post-body ul {
+  margin: 5px 0 8px 20px;
+}
+
+.post-body ul li {
+  margin-bottom: 3px;
+}
+
+.post-footer {
+  margin-top: 8px;
+  padding-top: 6px;
+}
+
+/* ===== СТАТИЧЕСКАЯ СТРАНИЦА ===== */
+
+.page-title {
+  margin: 0 0 14px;
+  padding-bottom: 8px;
+}
+
+.page-body p {
+  margin-bottom: 10px;
+}
+
+.page-body h3 {
+  margin: 16px 0 7px;
+}
+
+.page-body ul {
+  margin: 6px 0 10px 20px;
+}
+
+.page-body ul li {
+  margin-bottom: 4px;
+}
+
+.page-body blockquote {
+  padding: 8px 14px;
+  margin: 12px 0;
+}
+
+.page-body blockquote cite {
+  display: block;
+  margin-top: 5px;
+}
+
+/* ===== БОКОВАЯ КОЛОНКА ===== */
+
+#sidebar {
+  width: 188px;
+  flex-shrink: 0;
+  padding: 14px 0 18px;
+}
+
+.widget {
+  margin-bottom: 16px;
+  padding: 0 12px;
+}
+
+.widget-title {
+  padding: 6px 10px;
+  margin: 0 -12px 7px;
+}
+
+.widget ul li {
+  padding: 3px 0;
+}
+
+/* ===== ПОДВАЛ ===== */
+
+#footer {
+  width: 900px;
+  clear: both;
+  padding: 11px 20px;
+}
+
+/* ===== ПЛАНШЕТ / УЗКИЙ ЭКРАН ===== */
+
+@media (max-width: 899px) {
+  #wrap, #header, #nav, #footer { width: 100%; }
+
+  #header {
+    height: auto;
+  }
+  .header-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .site-branding { top: 12px; left: 12px; }
+  .site-name { font-size: 17px; }
+  .site-tagline { font-size: 10px; letter-spacing: 1px; }
+
+  #nav {
+    height: auto;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  #nav a {
+    padding: 10px 14px;
+    font-size: 13px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  #footer { width: 100%; padding: 10px 14px; }
+}
+
+/* ===== ТЕЛЕФОН (вертикально) ===== */
+
+@media (max-width: 600px) and (orientation: portrait) {
+  #page {
+    flex-direction: column;
+  }
+
+  #main {
+    padding: 14px 14px 20px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,.07);
+  }
+
+  #sidebar {
+    width: 100%;
+    padding: 12px 0 16px;
+    border-top: 1px solid rgba(255,255,255,.07);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  #sidebar .widget {
+    width: 50%;
+    padding: 0 14px;
+    margin-bottom: 14px;
+  }
+  #sidebar .widget:last-child { width: 100%; }
+}
+
+/* ===== ОЧЕНЬ МАЛЕНЬКИЙ ЭКРАН ===== */
+
+@media (max-width: 480px) {
+  body { background-attachment: fixed; }
+  #sidebar .widget { width: 100%; }
+  .post-title { font-size: 14px; }
+  .page-title { font-size: 17px; }
+}
